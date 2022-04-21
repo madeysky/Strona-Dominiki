@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root {
+--maximum-yellow-red: #F6BF4Bff;
+--maroon-x-11: #BA1267ff;
+--catawba: #663E43ff;
+--green-blue-crayola: #078ACDff;
+--raisin-black: #181E2Aff;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+*::selection {
+    background:var(--raisin-black);
+    color: #fff;
+    }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0; 
+    padding: 2rem 1rem;
+    z-index: 1000;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color:var(--raisin-black)
+}
+
+header a:hover{
+    color:var(--green-blue-crayola)
+}
+
+header .container .logo{
+    font-size: 3rem;
+}
+header .container .logo span{
+    color:var(--maroon-x-11);
+}
+
+header .nav ul{
+    margin: 0; padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .nav ul li{
+    margin: 0 1rem;
+}
+header .nav ul li a{
+    font-size: 2rem;
+}
+
+header .fa-bars{
+    font-size: 3.5rem;
+    color: var(--green-blue-crayola);
+    cursor: pointer;
+    display: none;
+}
+
+header .fa-times{
+    transform: rotate(180deg);
+
+}
+
+
+
+
+
+
+
+
+/* Responsywność*/
+@media (max-width:768px){
+    
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .nav{
+        position: fixed;
+        top: -100rem; left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, .3);
+        border-radius: .5rem;
+        border: .3rem solid var(--maroon-x-11) !important;
+        background: #fff;
+        width: 95%;
+        opacity: 0;
+    }
+    header .nav ul{
+        width: 100%;
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    header .nav ul li a{
+        font-size: 3rem;
+        display: block;
+    }
+    header .nav-toggle{
+        top: 50%;
+        opacity: 1;
+    }
+}
