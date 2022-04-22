@@ -76,6 +76,13 @@ header{
     padding: 2rem 1rem;
     z-index: 1000;
 }
+
+.header-active{
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    padding: .5rem 1rem;
+}
+
 header .container{
     display: flex;
     align-items: center;
@@ -146,6 +153,32 @@ header .fa-times{
     text-decoration: none;
     color: var(--raisin-black);  
 }
+
+
+.about{
+    background: #fff
+}
+
+.about .content .box{
+margin: 3rem 0;
+}
+
+.about .content .box h3{
+font-size: 2.5rem;
+color: var(--raisin-black);
+}
+
+.about .content .box h3 i{
+padding: 0 1rem;
+color: var(--maroon-x-11);
+}
+.about .content .box p{
+    font-size: 1.7rem;
+    padding-left: 6rem;
+    color: #666;
+}
+
+
 
 
 
