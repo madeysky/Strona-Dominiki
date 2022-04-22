@@ -69,6 +69,19 @@ top: 0%;
                 0 .3rem .5rem rgba(0, 0, 0, .3)
 }
 
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--raisin-black);
+    }
+    
+.heading span{
+    color: var(--maroon-x-11);
+    }
+
+
 header{
     width: 100%;
     position: fixed;
@@ -178,9 +191,32 @@ color: var(--maroon-x-11);
     color: #666;
 }
 
+.miejsca{
+    min-height: 100vh;
+}
 
+.miejsca .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
 
+}
+.miejsca .box-container .box{
+height: 20rem;
+width: 30rem;
+margin: .3rem;
+overflow: hidden;
+}
 
+.miejsca .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.miejsca .box-container .box:hover img{
+    transform: scale(1.3);
+}
 
 
 

@@ -17,6 +17,18 @@ $(document).ready(function(){
       $('header').removeClass('header-active');
       }
 
- })
+ });
+   
+$('.miejsca').magnificPopup({
+   delegate: 'a',
+   type: 'image',
+   gallery:{
+      enabled:true
+   }
+
+});
+
+
+
 
 });
