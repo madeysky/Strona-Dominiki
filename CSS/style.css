@@ -144,6 +144,37 @@ header .fa-times{
 
 }
 
+.counter .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.counter .box-container .box{
+    margin: 2rem 5rem;
+    text-align: center;
+}
+
+.counter .box-container i{
+    color: var(--maroon-x-11);
+    font-size: 5rem;
+}
+
+.counter .box-container span{
+    color: var(--raisin-black);
+    font-size: 3rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+.counter .box-container .box h3{
+    color: #666;
+    
+}
+
+
+
 .home .content h1{
     font-size: 5rem;
     color: var(--raisin-black);
