@@ -230,6 +230,54 @@ flex-wrap: wrap;
     color: var(--raisin-black);
 }
 
+.stopka{
+    background: var(--raisin-black);
+}
+
+.stopka p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.stopka .col-md-4:nth-child(1) a{
+    font-size: 3rem;
+    color: #fff;
+}
+.stopka .col-md-4:nth-child(1) a span{
+    font-size: 3rem;
+    color: var(--maroon-x-11);
+}
+
+.stopka a{
+    font-size: 2rem;
+    color: #ccc;
+    display: block;
+}
+
+.stopka h3{
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+.stopka a:hover{
+    color: var(--maroon-x-11);
+
+}
+
+.stopka .credit{
+    color: #fff;
+    width: 80%;
+    margin: 0;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    border-top: .1rem solid #fff !important;
+}
+
+.stopka .credit span{
+    color: var(--maroon-x-11);
+}
 
 
 
