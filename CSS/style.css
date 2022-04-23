@@ -141,8 +141,51 @@ header .fa-bars{
 
 header .fa-times{
     transform: rotate(180deg);
-
 }
+
+.kontakt{
+    background: var(--raisin-black);
+}
+
+.kontakt .heading{
+    color: #fff;
+}
+
+.kontakt form{
+    text-align: center;
+}
+
+.kontakt form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kontakt form .inputBox input, select{
+height: 4rem;
+width: 49%;
+padding: 0 1rem;
+margin: 1rem 0;
+font-size: 1.7rem;
+}
+
+.kontakt form textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.kontakt form input[type="submit"]{
+    width: 20rem;
+}
+
+.kontakt form input[type="submit"]:hover{
+    background: var(--raisin-black);
+}
+
+
 
 .counter .box-container{
     display: flex;
@@ -170,10 +213,7 @@ header .fa-times{
 
 .counter .box-container .box h3{
     color: #666;
-    
 }
-
-
 
 .home .content h1{
     font-size: 5rem;
@@ -190,14 +230,6 @@ header .fa-times{
     font-size: 4rem;
     color: var(--raisin-black);
 }
-.home .atribb{
-    font-size: .75rem;
-    z-index: 0;
-    overflow: hidden;
-    text-decoration: none;
-    color: var(--raisin-black);  
-}
-
 
 .about{
     background: #fff
@@ -352,4 +384,12 @@ overflow: hidden;
         top: 50%;
         opacity: 1;
     }
+    .kontakt form .inputBox input, select{
+        width: 100%;
+    }
+    .kontakt form input[type="submit"]{
+        width: 100%;
+    }
+
+    
 }
